@@ -13,7 +13,7 @@ import com.example.artgallery.service.ArtJpaService;
 @RestController
 public class ArtController {
     @Autowired
-    private com.example.artgallery.service.ArtJpaService as;
+    private ArtJpaService as;
 
     @GetMapping("/galleries/artists/arts")
     public ArrayList<Art> getArts() {
