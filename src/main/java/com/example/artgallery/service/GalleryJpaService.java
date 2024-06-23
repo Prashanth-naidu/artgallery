@@ -49,7 +49,7 @@ public class GalleryJpaService implements GalleryRepository {
         return savedGallery;
     }
 
-    public Gallery updatGallery(int galleryId, Gallery gallery) {
+    public Gallery updateGallery(int galleryId, Gallery gallery) {
         try {
             Gallery newGallery = gr.findById(galleryId).get();
             if (gallery.getGalleryName() != null) {
